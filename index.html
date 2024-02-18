@@ -4,12 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart bus Ticketing</title>
-</head>
-<body>
-    <header>
-        
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- tailwind custom css -->
+  <!-- font-awsome link -->
+  <script src="https://kit.fontawesome.com/1c73bb9a32.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+    .font-raleway{
+        font-family: "Raleway", sans-serif;
+    }
+</style>
+</head>
+<body class="font-raleway">
+    <header class="container mx-auto">
+     
+          <div class="navbar bg-base-100">
+         
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                
+              </div>
+              <ul tabindex="0" class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <p>P-Ticket</p>
+           
+          </div>
+          <div class=" navbar-center hidden mr-6 lg:flex">
+            <ul class="menu text-base menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <!-- class=navbar-end -->
+          <div class="navbar-end flex flex-1 lg:flex-row justify-end items-center ">
+            <i class="fa-solid fa-magnifying-glass mr-3"></i><a class="btn text-white bg-[#FF4240]">Bus</a>
+            <img src="images/bus-icon.png" alt="">
+          </div>
+        </div>
+        
+      </header>
     <main>
 
     </main>
