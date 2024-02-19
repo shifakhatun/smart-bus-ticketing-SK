@@ -50,11 +50,24 @@ for (let index = 0; index < seatNo.length; index++) {
         priceList.innerText=price;
         ticketPrice.appendChild(priceList);
         document.getElementById("total-price").innerText=totalPrice;
-        //disableElementById("input-button")
-        const inputButton=document.getElementById("input-button")
-        console.log(inputButton);
         event.target.parentNode.style.backgroundColor = "green";
         event.target.parentNode.style.pointerEvents="none";
+////////////discount calculation
+        const btn=document.getElementById("coupon-btn");
+       
+        btn.addEventListener("click", function(){
+            const couponElement1=document.getElementById("coupon-field").value;
+            // const couponElement2=document.getElementById("coupon-field").value;
+           const couponCode1=couponElement1.split(" ").join("").toUpperCase();
+           //const couponCode2=couponElement1.split(" ").join("").toUpperCase();
+           //console.log(couponElement1);
+          if(couponCode1==="NEW15" || couponCode2) 
+2
+        })
+         
+        
+
+       
        
 
     })
