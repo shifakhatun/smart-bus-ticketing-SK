@@ -188,25 +188,27 @@
 				
 				
 				<div class="border-green-500 col-span-1 border">
-					<div>
-						<div class="overflow-x-auto">
-							<table class="table">
-							  <!-- head -->
-							  <thead>
-								<tr>
-								  <th class="seatCount">Seat<span>0</span></th>
-								  <th>Class</th>
-								  <th>Price</th>
-								</tr>
-							  </thead>
-							  <tbody id="seatId">
-								<tr></tr>
-								<tr></tr>
-								<tr></tr>
-							  </tbody>
-							</table>
-						  </div>
+					<div class="flex justify-evenly pt-5">
+						<div id="seat-Container">
+                          <h4>Seats (<span id="seatCount">0</span>)</h4>
+						</div>
+						<div id="coach-type"> 
+                           <h4 >classes</h4>
+						</div>
+						<div id="price">
+                            <h4>Price</h4>
+						</div>
 					</div>
+					<hr class="my-4" />
+					<div class="flex justify-evenly items-center text-xl font-bold">
+						<h4>Total Price:</h4>
+						<p class="">
+							 $<span id="total-price"></span>
+						  </p>
+					</div>
+					<!-- <p class="text-xl font-bold py-2">
+						Total Price: $<span id="total-price"></span>
+					  </p> -->
 				</div>
 
 			 </div>
