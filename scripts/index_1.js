@@ -1,25 +1,14 @@
 //console.log("connected")
 let count=0;
 let totalPrice=0;
-let arr=[];
 const seatNo=document.querySelectorAll(".A");
 //console.log(seatNo);
 for (let index = 0; index < seatNo.length; index++) {
     const seatNumber = seatNo[index];  
     //console.log(seatNumber)
-    seatNumber.addEventListener("click", function (event){
-        
+    seatNumber.addEventListener("click", function(){
         count=count+1;
-        // const seatTitle=seatNumber.querySelector("p");
-        // console.log(seatTitle)
-        // seatTitle.style.backgroundColor='#1dd10066';
-       
-       //const title=seatNumber.querySelector("p").innerText;
-       const title=event.target.innerText;
-       if(arr.includes(title)===false){
-        arr.push(title);
-       }
-       
+       const title=seatNumber.querySelector("p").innerText;
        const seatContainer=document.getElementById("seat-Container");
        const p=document.createElement("p");
        p.innerText=title;
@@ -32,9 +21,11 @@ for (let index = 0; index < seatNo.length; index++) {
        coachCategory.innerText="economy";
        coachType.appendChild(coachCategory);      
        
-       
+            setBackgroundColorById(title);
         if(count>=4){
             alert("don't select again");
+            
+        
         }
         document.getElementById("seatCount").innerText=count; 
 
@@ -52,14 +43,15 @@ for (let index = 0; index < seatNo.length; index++) {
         document.getElementById("total-price").innerText=totalPrice;
         //disableElementById("input-button")
         const inputButton=document.getElementById("input-button")
-        console.log(inputButton);
-        event.target.parentNode.style.backgroundColor = "green";
-        event.target.parentNode.style.pointerEvents="none";
-       
+        console.log(inputButton)
+
 
     })
-   
 }
 
 
 
+// function Selected(){
+    
+   
+// }
