@@ -187,8 +187,8 @@
 				
 				
 				
-				<div class="border-green-500 col-span-1 border">
-					<div class="flex justify-evenly pt-5">
+				<div class="border-green-500 col-span-1 border p-8">
+					<div class="flex justify-evenly text-xl font-bold text-center">
 						<div id="seat-Container">
                           <h4>Seats (<span id="seatCount">0</span>)</h4>
 						</div>
@@ -199,17 +199,51 @@
                             <h4>Price</h4>
 						</div>
 					</div>
-					<hr class="my-4" />
-					<div class="flex justify-evenly items-center text-xl font-bold">
-						<h4>Total Price:</h4>
-						<p class="">
-							 $<span id="total-price"></span>
-						  </p>
+					<hr class="my-3 w-auto" />
+					<div class="flex justify-evenly items-center text-xl font-bold text-center">
+						<div><h4>Total Price:</h4></div>
+						<div><p class="">
+							$<span id="total-price"></span>
+						 </p></div>
 					</div>
-					<!-- <p class="text-xl font-bold py-2">
-						Total Price: $<span id="total-price"></span>
-					  </p> -->
+					<div class="bg-white pt-2 rounded-md text-center">
+						<div class="join">
+						  <input
+							id="input-field"
+							class="input input-bordered join-item "
+							placeholder="Have any coupon"
+						  />
+						  <button
+							id="apply-btn"
+							class="btn join-item rounded-md bg-[#F11A7B] text-white font-bold"
+						  >
+							Apply
+						  </button>
+						</div>
+					  </div>
+					  <div class="flex justify-evenly items-center text-xl font-bold text-center">
+						<div><h4>Grand Total:</h4></div>
+						<div><p class="">
+							$<span id="grand-total"></span>
+						 </p></div>
+					</div> 
+					
+					<!-- input text -->
+					<div class="flex w-full justify-center  ">
+						<div>
+						<label for="fname" class="text-lg font-bold">Passengers Name*</label><br>
+						<input type="text" id="fname" class="input input-bordered" placeholder="Enter your name"><br>
+						<label for="lname" class="text-lg font-bold">Phone Number</label><br>
+						<input type="password" id="input-number" class="input input-bordered" placeholder="Enter your phone number"><br>
+						<label for="lname" class="text-lg font-bold">Email ID</label><br>
+						<input type="email" id="lname" class="input input-bordered" placeholder="Enter your email id"><br><br>
+						<input type="submit" id="next-button" value="Next" class="w-full bg-lime-600 text-white rounded-2xl p-3">
+					    </div>
+					</div>  
+
+					
 				</div>
+				
 
 			 </div>
 	 </section>

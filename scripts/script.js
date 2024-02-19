@@ -41,26 +41,10 @@ for (let index = 0; index < seatNo.length; index++) {
         priceList.innerText=price;
         ticketPrice.appendChild(priceList);
         document.getElementById("total-price").innerText=totalPrice;
+        //disableElementById("input-button")
+        const inputButton=document.getElementById("input-button")
+        console.log(inputButton)
 
-
-
-
-//console.log(price);
-////set table data
-// const tableData=document.querySelector("tbody");
-// //console.log(tableData)
-// const data=tableData.querySelectorAll("tr");
-// //console.log(data[0]);
-// const data1=document.createElement("td");
-// //console.log(data1)
-// data[0].appendChild(data1);
-// // data[0].innerText=title;
-// // data[1].innerText="economy";
-// // data[2].innerText=price;
-// data1.innerText=title;
-// const data2=document.createElement("td");
-// data2.innerText="economy";
-// console.log(data)
 
     })
 }
