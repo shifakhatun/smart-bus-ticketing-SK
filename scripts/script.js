@@ -59,9 +59,9 @@ for (let index = 0; index < seatNo.length; index++) {
             const couponElement1=document.getElementById("coupon-field").value;
             // const couponElement2=document.getElementById("coupon-field").value;
            const couponCode1=couponElement1.split(" ").join("").toUpperCase();
-           //const couponCode2=couponElement1.split(" ").join("").toUpperCase();
-           //console.log(couponElement1);
-          if(couponCode1==="NEW15" || couponCode2) 
+           const couponCode2=couponElement1.split(" ").join("").toUpperCase();
+           console.log(couponCode1);
+          //if(couponCode1==="NEW15" || couponCode2) 
 2
         })
          

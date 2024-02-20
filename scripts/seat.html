@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- tailwind custom css -->
+  <!-- font-awsome link -->
+  <script src="https://kit.fontawesome.com/1c73bb9a32.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+    .font-raleway{
+        font-family: "Raleway", sans-serif;
+    }
+</style>
+</head>
+<body>
+    <section class="my-10">
+        <!-- <div class="grid grid-cols-1 lg:grid-cols-2">
+           <div class="border-red-950 col-span-1 border ">
+               <div class="grid grid-cols-2 gap-1 p-10">
+                <div class="grid-cols-1">
+                  <div></div>
+                 
+                
+                </div> -->
+                <div id="seatAvailable" class="grid grid-cols-6 gap-1 my-3 ">
+                 <div class="col-span-1">
+                  <div class=" pl-5 w-min grid grid-cols-1"></div>
+                  <p class="my-3 p-3 w-min" >A</p>
+                  <p class="my-3 p-3 w-min" >B</p>
+                  <p class="my-3 p-3 w-min" >C</p>
+                  <p class="my-3 p-3 w-min" >D</p>
+                  <p class="my-3 p-3 w-min" >E</p>
+                </div>
+                  <div class="col-span-3">
+                    <div class="text-center"><h2>image with heading</h2></div>
+                    <div class="grid grid-cols-5">
+                    <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
+                    <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
+                    <div>   </div>
+                    <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
+                    <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
+                                                         <!-- SEAT NO B START -->
+                    <button id="B1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >B1</button>
+                    <button id="B2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >B2</button>
+                    <div>   </div>
+                    <button id="B3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >B3</button>
+                    <button id="B4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >B4</button>
+
+                    <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
+                    <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
+                    <div>   </div>
+                    <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
+                    <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
+                    <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
+                    <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
+                    <div>   </div>
+                    <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A3</button>
+                    <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A4</button>
+                    <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A1</button>
+                    <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A2</button>
+                    <div>   </div>
+                    <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A3</button>
+                    <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A4</button>
+                
+                </div></div>
+           
+           
+           
+           <div class="border-green-500 col-span-2 border p-8">
+               <div class="flex justify-evenly text-xl font-bold text-center">
+                   <div id="seat-Container">
+                     <h4>Seats (<span id="seatCount" class="bg-lime-400 rounded-full">0</span>)</h4>
+                   </div>
+                   <div id="coach-type"> 
+                      <h4 >classes</h4>
+                   </div>
+                   <div id="price">
+                       <h4>Price</h4>
+                   </div>
+               </div>
+               <hr class="my-3 w-auto" />
+               <div class="flex justify-evenly items-center text-xl font-bold text-center">
+                   <div><h4>Total Price:</h4></div>
+                   <div><p class="">
+                       $<span id="total-price"></span>
+                    </p></div>
+               </div>
+               <div class="bg-white pt-2 rounded-md text-center">
+                   <div class="join">
+                     <input
+                       id="coupon-field"
+                       class="input input-bordered join-item "
+                       placeholder="Have any coupon"
+                     />
+                     <button
+                       id="coupon-btn"
+                       class="btn join-item rounded-md bg-lime-600 text-white font-bold"
+                     >
+                       Apply
+                     </button>
+                   </div>
+                 </div>
+                 <div class="flex justify-evenly items-center text-xl font-bold text-center">
+                   <div><h4>Grand Total:</h4></div>
+                   <div><p class="">
+                       $<span id="grand-total"></span>
+                    </p></div>
+               </div> 
+               <div   class="flex justify-center"><button id="next-button" class="btn text-white text-center border-[#1dd10066] bg-lime-600 w-full rounded-2xl p-3">Next</button></div>
+               
+               </div>  
+
+               
+           </div>
+           
+
+        </div>
+</section>
+<section>
+  <div class="border-red-950 col-span-1 border ">
+    <div id="seatAvailable" class="grid grid-cols-6 gap-1 my-3">
+      <div  class="text-black text-center w-min p-3"><p>A</p></div>
+      <div id="A1" class="A border bg-slate-400 text-black text-center w-min p-3"><p>A1</p></div>
+      <div id="A2" class="A border bg-slate-400 text-black text-center w-min p-3"><p>A2</p></div>
+      <div>           </div>
+      <div id="A3" class="A border bg-slate-400 text-black text-center w-min p-3"><p>A3</p></div>
+      <div id="A4" class="A border bg-slate-400 text-black text-center w-min p-3"><p>A4</p></div>
+
+      <div class="text-black text-center w-min p-3"><p>B</p></div>
+      <div id="B1" class="A border bg-slate-400 text-black text-center w-min p-3"><p>B1</p></div>
+      <div id="B2" class="A border bg-slate-400 text-black text-center w-min p-3"><p>B2</p></div>
+      <div>  </div>
+      <div id="B3" class="A border bg-slate-400 text-black text-center w-min p-3"><p>B3</p></div>
+      <div id="B4" class="A border bg-slate-400 text-black text-center w-min p-3"><p>B4</p></div>
+
+      <div class="text-black text-center w-min p-3"><p>C</p></div>
+      <div id="C1" class="A border bg-slate-400 text-black text-center w-min p-3"><p>C1</p></div>
+      <div id="C2" class="A border bg-slate-400 text-black text-center w-min p-3"><p>C2</p></div>
+      <div>  </div>
+      <div id="C3" class="A border bg-slate-400 text-black text-center w-min p-3"><p>C3</p></div>
+      <div id="C4" class="A border bg-slate-400 text-black text-center w-min p-3"><p>C4</p></div>
+      
+      
+
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
