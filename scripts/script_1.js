@@ -16,8 +16,7 @@ for(const btn of allbtn){
                 
             }
             
-            // showElementById("grandCost");
-            // showElementById("dicount");
+        
             return;
         }
         // if(count>=4){
@@ -64,7 +63,7 @@ for(const btn of allbtn){
     ticketPrice.appendChild(priceList);
     document.getElementById("total-price").innerText=totalPrice;
 
-    event.target.style.backgroundColor = "green";
+    event.target.style.backgroundColor = "#5CD100";
     event.target.setAttribute("disabled", true);
     
 
@@ -75,12 +74,7 @@ for(const btn of allbtn){
     const couponBtn=document.getElementById("coupon-btn");
     couponBtn.addEventListener("click", function(){
         const couponCode=document.getElementById("coupon-field").value;
-        // const couponElement2=document.getElementById("coupon-field").value;
-    //    const couponCode1=couponElement1.split(" ").join("").toUpperCase();
-    //    const couponCode2=couponElement1.split(" ").join("").toUpperCase();
-       //console.log(couponElement);
-  
-        
+
         if(couponCode==="NEW15"){
               const discountAmount=totalPrice*(15/100); //15% discount
               const grandTotal=document.getElementById("grand-total");
