@@ -168,10 +168,27 @@
                 <!---------------------- Start of Ticket purchasing -->
 
 	 <section class="my-10">
-		<div><h3 class="text-xl font-bold">Select Your Seat</h3></div>
-		<div  class="grid grid-cols-6 gap-1 my-3 ">
+		
+
+		<!-- //seat selection -->
+        <div class="flex">
+			
+	<div class="w-3/5 p-10">
+		<div class="p-3 mr-4 space-y-4">
+			<div><h3 class="text-xl font-bold">Select Your Seat</h3></div>
+			<div><hr class="border-dashed"></div>
+			<div class="flex justify-between items-center ">
+				<div class="flex items-center"><img src="./images/seat-gray.png" alt=""><span>Available</span></div>
+				<div class="flex items-center"><img src="./images/seat-green-filled.png" alt=""><span>Selected</span></div>
+			</div>
+			<div><hr class="border-dashed"></div>
+			<div class="flex justify-end items-center mx-10"><img src="./images/Vector.png" class="w-min bg-zinc-500 border-2 rounded-xl p-3" alt=""></div>
+			</div>
+		<div>
+		<div  class="grid grid-cols-4 gap-1 my-3 ">
+			
 			<div class="col-span-1">
-			 <div class=" pl-5 w-min grid grid-cols-1"></div>
+			 <div class="w-min grid grid-cols-1"></div>
 			 <p class="my-3 p-3 w-min" >A</p>
 			 <p class="my-3 p-3 w-min" >B</p>
 			 <p class="my-3 p-3 w-min" >C</p>
@@ -179,7 +196,7 @@
 			 <p class="my-3 p-3 w-min" >E</p>
 		   </div>
 			 <div class="col-span-3">
-			   <div class="text-center"><h2>image with heading</h2></div>
+			   
 			   <div id="seatAvailable" class="grid grid-cols-5">
 			   <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
 			   <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
@@ -209,11 +226,16 @@
 			   <button id="E3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
 			   <button id="E4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
 		   
-		   </div></div>
+		   </div>
+		</div>
+		</div>
+	</div>
+	</div>
+	        
+		
+	  <div class="w-2/5">
 	  
-	  
-	  
-	  <div class="border-green-500 col-span-2 border p-8">
+	  <div class="border-green-500 border p-8">
 		  <div class="flex justify-evenly text-xl font-bold text-center">
 			  <div id="seat-Container">
 				<h4>Seats (<span id="seatCount" class="bg-lime-400 rounded-full">0</span>)</h4>
@@ -285,6 +307,8 @@
 
 		  
 	  </div>
+	</div>
+	</div>
 				
 				
 				
