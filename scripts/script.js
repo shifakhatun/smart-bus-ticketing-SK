@@ -76,4 +76,24 @@ for (let index = 0; index < seatNo.length; index++) {
 }
 
 
+//////extra for saving  purpose script_1.js
+if(count>4){
+    alert("don't select again");
+    
+    // allbtn.forEach(item=>{
+    //     item.setAttribute("disabled", true);
+    //     // item.removeEventListener("click", function(){})
+    // })
+    const btn1=document.getElementsByClassName("add-seat");
+    for (const singlebtn of btn1) {
+        singlebtn.disabled=true;
+        
+    }
+    
+    showElementById("grandCost");
+    showElementById("dicount");
+    return;
+}
+
+
 

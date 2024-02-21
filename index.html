@@ -48,7 +48,7 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <p>P-Ticket</p>
+            <p class="font-extrabold text-2xl">P-Ticket</p>
            
           </div>
           <div class=" navbar-center hidden mr-6 lg:flex">
@@ -68,12 +68,12 @@
             </button>
           </div>
         </div>
-        <div class="hero min-h-screen" style="background-image: url(./images/banner.png);">
-          <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero min-h-screen " style="background-image: url(./images/banner.png);">
+          <div class="hero-overlay bg-opacity-60 "></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="text-center">
               <h1 class="mb-5 text-5xl font-extrabold ">End-to-End Travel with <br> <span style="color: chartreuse;">P Paribahan</span></h1>
-              <p class="mb-5 max-w-md">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+              <p class="mb-5 max-w-xl">Passengers who have purchased e-tickets are informed that the journey time may change due to traffic jams and vehicle mechanical faults and other natural reasons. Our continuous effort is to ensure your journey on time. It is our promise to provide clean service on your journey.</p>
               <button onclick="myFunction()" id="buy-tickets" class="btn bg-[#1DD100] border-[#1dd10066]">Buy Tickets</button>
             </div>
           </div>
@@ -119,14 +119,15 @@
 			  
 	 </section>
                         <!-- Start of PH Paribahan     -->
-	 <section class="my-10 border-t-2 rounded-2xl border-[#1dd10066]">
-		<div class="pt-10 text-center">
-			<h3 class=" text-3xl text-black font-bold" >P. H Paribahan</h3>
-			<p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+	 <section class="my-10 border-t-2 rounded-2xl border-[#1dd10066] bg-[#F7F8F8]">
+		<div class="p-10 text-center">
+			<h3 class=" text-3xl text-black font-bold pb-3" >P. H Paribahan</h3>
+			<p class=" text-center px-16">Passengers who have purchased e-tickets are informed that the journey time may change due to traffic jams and vehicle mechanical faults and other natural reasons. Our continuous effort is to ensure your journey on time. It is our promise to provide clean service on your journey.</p>
 
 		</div>
-		<div class="flex ">
-			<div class="w-3/5 flex justify-between border-r-4 border-dashed p-10"> 
+		<div class="flex bg-white border-none rounded-xl ">
+			<div class="w-3/5  border-r-4 border-dashed p-10 space-y-4"> 
+			<div class="flex justify-between ">
 			<div class="flex gap-5">
               <img src="./images/bus-logo.png" alt="">
 			  <div><h2>Greenline Paribahan</h2>
@@ -137,11 +138,26 @@
 				<img src="./images/seat-green.png" alt=""><span id="seats-left">40</span>
 				<p >Seats left</p>
 			</div>
+		</div>
+		<div class="flex justify-between items-center">
+			<div><h5>Route</h5></div><div><p class="font-semibold">Dhaka-Rajshahi</p></div>
+		</div>
+		<div><hr class="border-dashed"></div>
+		<div class="flex justify-between items-center ">
+			<div><h5>Departure Time</h5></div><div><p class="font-semibold">9:00 PM</p></div>
+		</div>
+		<div><hr class="border-dashed"></div>
+		<div class="flex justify-between">
+	    <div class="p-3 rounded-2xl bg-[#0307120c]"><h4>Boarding Point-kollanpur</h4></div>
+	    <div class="p-3 rounded-2xl bg-[#0307120c]"><h4>Dropping Point-Natore</h4></div>
+	    <div class="p-3 rounded-2xl bg-[#0307120c]"><h4>Est. Time-6Hours</h4></div>
+	
+	   </div>
 		</div> 
-			<div class="w-1/5 text-center "> 
-				<div class="flex justify-center"><img src="./images/fare.png" alt=""></div>
+			<div class="w-1/5 text-center items-center flex flex-col justify-center space-y-4"> 
+			<div class="flex justify-center"><img src="./images/fare.png" alt=""></div>
 		    
-			<h2 id="seatPrice" class="font-semibold">550 Taka</h2> 
+			<h2 id="seatPrice" class="font-bold">550 Taka</h2> 
 			<p>Per Seat</p>
 			</div>
 		</div>
@@ -152,6 +168,7 @@
                 <!---------------------- Start of Ticket purchasing -->
 
 	 <section class="my-10">
+		<div><h3 class="text-xl font-bold">Select Your Seat</h3></div>
 		<div  class="grid grid-cols-6 gap-1 my-3 ">
 			<div class="col-span-1">
 			 <div class=" pl-5 w-min grid grid-cols-1"></div>
@@ -176,21 +193,21 @@
 			   <button id="B3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >B3</button>
 			   <button id="B4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >B4</button>
 
-			   <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
-			   <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
+			   <button id="C1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
+			   <button id="C2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
 			   <div>   </div>
-			   <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
-			   <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
-			   <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
-			   <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
+			   <button id="C3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
+			   <button id="C4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
+			   <button id="D1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
+			   <button id="D2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
 			   <div>   </div>
-			   <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A3</button>
-			   <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A4</button>
-			   <button id="A1" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A1</button>
-			   <button id="A2" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A2</button>
+			   <button id="D3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
+			   <button id="D4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
+			   <button id="E1" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A1</button>
+			   <button id="E2" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A2</button>
 			   <div>   </div>
-			   <button id="A3" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A3</button>
-			   <button id="A4" class="add-seat btn rounded-xl text-black text-center w-min p-3" >A4</button>
+			   <button id="E3" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A3</button>
+			   <button id="E4" class="add-seat btn rounded-xl text-black text-center w-min my-3 p-3" >A4</button>
 		   
 		   </div></div>
 	  
@@ -244,7 +261,8 @@
 		   <button id="next-button" disabled class="btn btn-wide bg-lime-600 text-white" onclick="my_modal_1.showModal()">Next</button></div>
 			  <dialog id="my_modal_1" class="modal">
 				<div class="modal-box text-center">
-					<img src="./images/success.png.png" alt="">
+					<div  class="flex justify-center"><img src="./images/success.png.png" alt=""></div>
+					
 					<div class="border-dashed border-2 border-slate-700"><h3 class="font-bold text-4xl text-green-900">SUCCESS</h3></div>
 				  
 				  <div class="border-dashed border-2 border-slate-700">

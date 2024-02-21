@@ -10,20 +10,30 @@ for(const btn of allbtn){
         if(count>4){
             alert("don't select again");
             
-            // allbtn.forEach(item=>{
-            //     item.setAttribute("disabled", true);
-            //     // item.removeEventListener("click", function(){})
-            // })
             const btn1=document.getElementsByClassName("add-seat");
             for (const singlebtn of btn1) {
                 singlebtn.disabled=true;
                 
             }
             
-            showElementById("grandCost");
-            showElementById("dicount");
+            // showElementById("grandCost");
+            // showElementById("dicount");
             return;
         }
+        // if(count>=4){
+           
+        //     showElementById("grandCost");
+        //     showElementById("dicount");
+           
+        // }else if(count>4){
+        //     alert("don't select again");
+        //     const btn1=document.getElementsByClassName("add-seat");
+        //     for (const singlebtn of btn1) {
+        //         singlebtn.disabled=true;
+        //     }
+        // }else{
+        //     return;
+        // }
        //seatname added
     const seatName=event.target.innerText;
     const seatContainer=document.getElementById("seat-Container");
@@ -60,6 +70,8 @@ for(const btn of allbtn){
 
     ///coupon select
     if(count==4){
+        showElementById("grandCost");
+        showElementById("dicount");
     const couponBtn=document.getElementById("coupon-btn");
     couponBtn.addEventListener("click", function(){
         const couponCode=document.getElementById("coupon-field").value;
